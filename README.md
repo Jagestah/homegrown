@@ -21,7 +21,7 @@ Building tomorrow's DevOps Engineers today.
   - checkout
 - Weekly Homework:
   - Create Github account
-  - Create Repo for this ongoing project
+  - Create Repo for ttheir ongoing project
   - Create a README.md in the repo documenting why the student is interested in the course
 
 ### Week 2
@@ -44,7 +44,8 @@ Building tomorrow's DevOps Engineers today.
 - Weekly Homework:
   - Containerize Challenge 1
   - Push the container to their Dockerhub
-  - Send the image info to JJ to be ran on his machine
+  - Send the image info to another student to be ran on their machine
+  - Commit Dockerfile to their Github Repo
 
 ### Week 4
 - Kubernetes with K3S
@@ -59,6 +60,7 @@ Building tomorrow's DevOps Engineers today.
 - Weekly Homework:
   - Stand up K3S on workstation
   - Deploy Challenge 1 container to K3S
+    - Should be a job
 
 ### Week 5
 - Helm
@@ -71,7 +73,7 @@ Building tomorrow's DevOps Engineers today.
 - Weekly Homework:
   - Migrate K3S deployment to Helm chart
   - Deploy Helm chart to K3s
-  - Package Helm chart and send to JJ to be installed and tested on his machine
+  - Package Helm chart and send to another student to be installed and tested on their machine
 
 ### Week 6
 - Intro to CI/CD
