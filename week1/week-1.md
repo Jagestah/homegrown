@@ -2,69 +2,22 @@
 #### Overview
 This week's focus is on building out our development environments and an introduction to some of the key concepts that drive DevOps.
 
-- Additional Resources:
+###### Additional Reading:
   - [Bash cheat sheet for CLI commands](https://devhints.io/bash)
-  - The 12 Factor App
-  - DRY Principle
+  - [The 12 Factor App](https://12factor.net/)
+  - [DRY Principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
   - [Git Documentation](https://git-scm.com/docs/gitglossary)
-  - Markdown Documentation
-
-
-- Workstation Setup
-  - Installing Command Line Interface (CLI)
-  - Creating a code folder
-  - Navigating the command line
-  - Installing an Editor
-  - Join Code Club Crew Slack Workspace
-- Intro to Infrastructure as Code
-- Intro to DevOps Methodology
-- Git
-  - branches
-  - repos
-  - commits
-  - pull
-  - push
-  - checkout
-  - pull requests
-- Weekly Homework:
-  - Create  aGithub account
-  - Create Repo for the ongoing project
-  - Create a README.md in the repo documenting why the student is interested in the course
-
-### Workstation Setup
-
-###### Installing a Command Line Interface (CLI)
-- Recommendation for Mac: [iTerm2](https://www.iterm2.com)
-- Recommendation for Linux: [Terminal](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
-
-###### Creating a code folder
-_Using your CLI_
-1. Navigate to your `root` folder
-  - `cd`
-2. Create the `code` folder
-  - `mkdir code`
-
-###### Navigating the Command Line
-_Refer to Additional-Resources.1 for a more complete list._
-
-Quick callouts:
-- `cd` = Change Directory, change the context of your CLI
-  - `~` refers to your home directory
-  - `cd` with no arguments takes you back to your home directory
-  - `cd ~/code` takes you to your code repo
-- `ls` = List, view the contents of your current CLI context(IE subdirectories and files)
-  - `ll` is also a popular option
-
-###### Installing an IDE
-- Recommendation: [Atom](https://atom.io/)
+  - [Markdown Documentation](https://www.markdownguide.org/basic-syntax/)
 
 ###### Join the Code-Club-Crew (C3) Slack Workspace
 In the Slack channel we have several industry professionals and other students who can help when you get blocked or need additional clarification.
 - [Click here to join the Workspace](https://join.slack.com/t/code-club-crew/shared_invite/enQtNDQ3ODA2NTk0MTEyLTc1ODVhYTAwMDAyMTAwODlkMDAzYzNhMjIwOTcyMzA4MTY5NjExOTA2NjJiNGEzOTA5MDNlZGJiZTBjNzAzZjE)
 
 ### Goals of this bootcamp
+The goal of this bootcamp is to expose students to the problems we see in modern software development and give them the knowledge and mentorship necessary to solve those problems in a DevOps way. DevOps Engineering is a very rewarding career for those who enjoy it; But with a scarcity of mentors and the lack of a formal career track leading to a DevOps position many aren't afforded an opportunity to determine if DevOps is for them. Let's change that.
 
-
+I want to build a culture of asking questions and providing mentorship amongst those trying to break in to the DevOps space or for those that want to know if DevOps is for them but don't know where to start.
+I have found the DevOps community to be extremely welcoming. Those that have blazed a path to success in DevOps are excited and eager to teach others their hard-earned lessons. My aim is to provide a conduit for that student/mentorship relationship while simultaneously teaching people to embrace automation and build a healthy hate for toil.
 
 ###  Intro to DevOps Methodology
 ###### What is DevOps?
@@ -94,6 +47,34 @@ Infrastructure as Code is a methodology that in its purest form would allow you 
 
 The idea that you could also leverage IaC to recover from any infrastructure failure or even spin up an exact replica of your infrastructure in a different geographical region or cloud provider is very lucrative to companies.
 
+### Workstation Setup
+
+###### Installing a Command Line Interface (CLI)
+- Recommendation for Mac: [iTerm2](https://www.iterm2.com)
+- Recommendation for Linux: [Terminal](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
+
+###### Creating a code folder
+> Using your CLI
+
+1. Navigate to your `root` folder
+  - `cd`
+2. Create the `code` folder
+  - `mkdir code`
+
+###### Navigating the Command Line
+> Refer to Additional-Resources.1 for a more complete list.
+
+Quick callouts:
+- `cd` = Change Directory, change the context of your CLI
+  - `~` refers to your home directory
+  - `cd` with no arguments takes you back to your home directory
+  - `cd ~/code` takes you to your code repo
+- `ls` = List, view the contents of your current CLI context(IE subdirectories and files)
+  - `ll` is also a popular option
+
+###### Installing an IDE
+- Recommendation: [Atom](https://atom.io/)
+
 ### Git
 Familiarity with Git and by extension manipulating code source control is integral to someone within a development organization. Whether they're a Developer or DevOps Engineer. The cues from the source control is largely what will kick off our automation. Source control is also important as a way for multiple engineers to work on the same code base.
 
@@ -106,12 +87,12 @@ Manipulating the code in Git isn't always intuitive and it can be frustrating of
 | Term              | Definition |
 | :-----            | :----- |
 | repo              | Synonymous with 'project'. A repo will include all the code for a specific application. |
-| branch            | A logical separation of the code, meant to be eventually merged to a single branch, `master` |
-| commit            | A save point in the code. Code must be committed before it can be pushed to the repo |
-| pull              | Sync your local files with any changes in the repo |
-| push              | Send your local changes to update the files on the repo |
-| checkout          | Change which branch you're developing on |
-| pull requests     | Sometimes called a Merge Request. Use these to combine branches. IE your branch to `master` |
+| branch            | A logical separation of the code, meant to be eventually merged to a single branch, `master`. |
+| commit            | A save point in the code. Code must be committed before it can be pushed to the repo. |
+| pull              | Sync your local files with any changes in the repo. |
+| push              | Send your local changes to update the files on the repo. |
+| checkout          | Change which branch you're developing on. |
+| pull requests     | Sometimes called a Merge Request. Use these to combine branches. IE your branch to `master`. |
 
 ### Weekly Homework:
 - Familiarize yourself with the Additional Resources listed above.
