@@ -6,12 +6,13 @@ Building tomorrow's DevOps Engineers today.
 
 ### Week 1
 - Workstation Setup
+  - Installing Command Line Interface (CLI)
   - Creating a code folder
   - Navigating the command line
   - Installing an Editor
   - Join Code Club Crew Slack Workspace
-- Intro to Infrastructure as Code
 - Intro to DevOps Methodology
+- Intro to Infrastructure as Code
 - Git
   - branches
   - repos
@@ -19,9 +20,10 @@ Building tomorrow's DevOps Engineers today.
   - pull
   - push
   - checkout
+  - pull requests
 - Weekly Homework:
-  - Create Github account
-  - Create Repo for ttheir ongoing project
+  - Create a Github account
+  - Create Repo for the ongoing project
   - Create a README.md in the repo documenting why the student is interested in the course
 
 ### Week 2
