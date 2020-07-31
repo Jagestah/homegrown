@@ -9,15 +9,21 @@ This week's focus is on building out our development environments and an introdu
   - [Git Documentation](https://git-scm.com/docs/gitglossary)
   - [Markdown Documentation](https://www.markdownguide.org/basic-syntax/)
 
+---
+
 ###### Join the Code-Club-Crew (C3) Slack Workspace
 In the Slack channel we have several industry professionals and other students who can help when you get blocked or need additional clarification.
 - [Click here to join the Workspace](https://join.slack.com/t/code-club-crew/shared_invite/enQtNDQ3ODA2NTk0MTEyLTc1ODVhYTAwMDAyMTAwODlkMDAzYzNhMjIwOTcyMzA4MTY5NjExOTA2NjJiNGEzOTA5MDNlZGJiZTBjNzAzZjE)
+
+---
 
 ### Goals of this bootcamp
 The goal of this bootcamp is to expose students to the problems we see in modern software development and give them the knowledge and mentorship necessary to solve those problems in a DevOps way. DevOps Engineering is a very rewarding career for those who enjoy it; But with a scarcity of mentors and the lack of a formal career track leading to a DevOps position many aren't afforded an opportunity to determine if DevOps is for them. Let's change that.
 
 I want to build a culture of asking questions and providing mentorship amongst those trying to break in to the DevOps space or for those that want to know if DevOps is for them but don't know where to start.
 I have found the DevOps community to be extremely welcoming. Those that have blazed a path to success in DevOps are excited and eager to teach others their hard-earned lessons. My aim is to provide a conduit for that student/mentorship relationship while simultaneously teaching people to embrace automation and build a healthy hate for toil.
+
+---
 
 ###  Intro to DevOps Methodology
 ###### What is DevOps?
@@ -41,11 +47,15 @@ I've found that people who are passionate about DevOps have some common personal
 
 This list isn't exhaustive or exclusive.
 
+---
+
 ### Intro to Infrastructure as Code (IaC)
 ###### What is IaC?
 Infrastructure as Code is a methodology that in its purest form would allow you to make any change necessary to the infrastructure via a change to source code. Thereby giving you access to all of the features of a source-controlled codebase. Such as; Versioned history and change control.
 
 The idea that you could also leverage IaC to recover from any infrastructure failure or even spin up an exact replica of your infrastructure in a different geographical region or cloud provider is very lucrative to companies.
+
+---
 
 ### Workstation Setup
 
@@ -75,6 +85,8 @@ Quick callouts:
 ###### Installing an IDE
 - Recommendation: [Atom](https://atom.io/)
 
+---
+
 ### Git
 Familiarity with Git and by extension manipulating code source control is integral to someone within a development organization. Whether they're a Developer or DevOps Engineer. The cues from the source control is largely what will kick off our automation. Source control is also important as a way for multiple engineers to work on the same code base.
 
@@ -94,7 +106,9 @@ Manipulating the code in Git isn't always intuitive and it can be frustrating of
 | checkout          | Change which branch you're developing on. |
 | pull requests     | Sometimes called a Merge Request. Use these to combine branches. IE your branch to `master`. |
 
-### Weekly Homework:
+---
+
+## Weekly Homework:
 - Familiarize yourself with the Additional Resources listed above.
 - Create a Github account.
 - Create Repo for the ongoing project.
