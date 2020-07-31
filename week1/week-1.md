@@ -59,8 +59,11 @@ Quick callouts:
 - Recommendation: [Atom](https://atom.io/)
 
 ###### Join the Code-Club-Crew (C3) Slack Workspace
-In the Slack channel we have several Industry Professionals and students who can help when you get blocked or need additional clarification.
+In the Slack channel we have several industry professionals and other students who can help when you get blocked or need additional clarification.
 - [Click here to join the Workspace](https://join.slack.com/t/code-club-crew/shared_invite/enQtNDQ3ODA2NTk0MTEyLTc1ODVhYTAwMDAyMTAwODlkMDAzYzNhMjIwOTcyMzA4MTY5NjExOTA2NjJiNGEzOTA5MDNlZGJiZTBjNzAzZjE)
+
+### Goals of this bootcamp
+
 
 
 ###  Intro to DevOps Methodology
@@ -79,12 +82,13 @@ I've found that people who are passionate about DevOps have some common personal
 - Industriously Lazy
 - Able to see the beauty in efficiency
 - A fascination with automation
+- Clever not smart
 
 This list isn't exhaustive or exclusive.
 
 ### Intro to Infrastructure as Code (IaC)
 ###### What is IaC?
-Infrastrucure as Code is a methodology that in its purest form would allow you to make any change necessary to the infrastructure via a change to source code. Thereby giving you access to all of the features of a source-controlled codebase. Such as; Versioned history and change control.
+Infrastructure as Code is a methodology that in its purest form would allow you to make any change necessary to the infrastructure via a change to source code. Thereby giving you access to all of the features of a source-controlled codebase. Such as; Versioned history and change control.
 
 The idea that you could also leverage IaC to recover from any infrastructure failure or even spin up an exact replica of your infrastructure in a different geographical region or cloud provider is very lucrative to companies.
 
