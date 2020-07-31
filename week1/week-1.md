@@ -6,7 +6,7 @@ This week's focus is on building out our development environments and an introdu
   - [Bash cheat sheet for CLI commands](https://devhints.io/bash)
   - The 12 Factor App
   - DRY Principle
-  - Git Documentation
+  - [Git Documentation](https://git-scm.com/docs/gitglossary)
   - Markdown Documentation
 
 
@@ -72,6 +72,8 @@ There's differing opinions on what is or is not DevOps. There's also some ambigu
 
 DevOps as a role is an evolution of a company adopting a DevOps Culture. At a certain point the operational overhead of maintaining the company's pipelines, tooling and the skillset surrounding those tasks becomes so great that it makes sense to hire someone solely for that function. One of the main advantages of having a DevOps Engineering role is their ability to specialize in CI/CD best practices, technologies, and standards that can be be applied organization wide, transcending teams.
 
+In fewer words; DevOps Engineers exist to increase the output of Developers, and thus the velocity of feature releases, by using automation to remove toil.
+
 ###### Why DevOps for Companies?
 Companies that have moved from adopting a DevOps culture to hiring dedicated DevOps Engineers is looking for a person or team of people to be force multipliers for their Developers.
 
@@ -93,15 +95,26 @@ Infrastructure as Code is a methodology that in its purest form would allow you 
 The idea that you could also leverage IaC to recover from any infrastructure failure or even spin up an exact replica of your infrastructure in a different geographical region or cloud provider is very lucrative to companies.
 
 ### Git
-branches
-repos
-commits
-pull
-push
-checkout
-pull requests
+Familiarity with Git and by extension manipulating code source control is integral to someone within a development organization. Whether they're a Developer or DevOps Engineer. The cues from the source control is largely what will kick off our automation. Source control is also important as a way for multiple engineers to work on the same code base.
+
+Manipulating the code in Git isn't always intuitive and it can be frustrating oftentimes when things go awry. Some pointers to make your life easier:
+- When working with others, never commit to master. Write your code in a feature branch and merge it to master via an MR or PR.
+- `git pull` often. Syncing your local machines files with the remote server is never a bad idea.
+
+##### Some Vocabulary:
+
+| Term              | Definition |
+| :-----            | :----- |
+| repo              | Synonymous with 'project'. A repo will include all the code for a specific application. |
+| branch            | A logical separation of the code, meant to be eventually merged to a single branch, `master` |
+| commit            | A save point in the code. Code must be committed before it can be pushed to the repo |
+| pull              | Sync your local files with any changes in the repo |
+| push              | Send your local changes to update the files on the repo |
+| checkout          | Change which branch you're developing on |
+| pull requests     | Sometimes called a Merge Request. Use these to combine branches. IE your branch to `master` |
 
 ### Weekly Homework:
-Create a Github account
-Create Repo for the ongoing project
-Create a README.md in the repo documenting why the student is interested in the course
+- Familiarize yourself with the Additional Resources listed above.
+- Create a Github account.
+- Create Repo for the ongoing project.
+- Create a README.md in the repo documenting why you're interested in this course.
