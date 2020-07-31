@@ -2,7 +2,7 @@
 #### Overview
 This week's focus is on building out our development environments and an introduction to some of the key concepts that drive DevOps.
 
-###### Additional Reading:
+##### Additional Reading:
   - [Bash cheat sheet for CLI commands](https://devhints.io/bash)
   - [The 12 Factor App](https://12factor.net/)
   - [DRY Principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
@@ -11,7 +11,7 @@ This week's focus is on building out our development environments and an introdu
 
 ---
 
-###### Join the Code-Club-Crew (C3) Slack Workspace
+##### Join the Code-Club-Crew (C3) Slack Workspace
 In the Slack channel we have several industry professionals and other students who can help when you get blocked or need additional clarification.
 - [Click here to join the Workspace](https://join.slack.com/t/code-club-crew/shared_invite/enQtNDQ3ODA2NTk0MTEyLTc1ODVhYTAwMDAyMTAwODlkMDAzYzNhMjIwOTcyMzA4MTY5NjExOTA2NjJiNGEzOTA5MDNlZGJiZTBjNzAzZjE)
 
@@ -26,19 +26,19 @@ I have found the DevOps community to be extremely welcoming. Those that have bla
 ---
 
 ###  Intro to DevOps Methodology
-###### What is DevOps?
+##### What is DevOps?
 There's differing opinions on what is or is not DevOps. There's also some ambiguity between DevOps as a culture and DevOps as a job function. In my experience, in companies where DevOps exists only as a culture the Developers are responsible for building the tooling and standards around deploying their team's application in an automated way. The skillset around this tooling is complimentary to a Developer's traditional skillset but is broad enough by itself to warrant an entirely new breed of Engineer. Enter the DevOps Engineer.
 
 DevOps as a role is an evolution of a company adopting a DevOps Culture. At a certain point the operational overhead of maintaining the company's pipelines, tooling and the skillset surrounding those tasks becomes so great that it makes sense to hire someone solely for that function. One of the main advantages of having a DevOps Engineering role is their ability to specialize in CI/CD best practices, technologies, and standards that can be be applied organization wide, transcending teams.
 
 In fewer words; DevOps Engineers exist to increase the output of Developers, and thus the velocity of feature releases, by using automation to remove toil.
 
-###### Why DevOps for Companies?
+##### Why DevOps for Companies?
 Companies that have moved from adopting a DevOps culture to hiring dedicated DevOps Engineers is looking for a person or team of people to be force multipliers for their Developers.
 
 These companies are usually feeling the pain of manual and very slow deployments, manual testing, and rampant human error.
 
-###### Who makes a good DevOps Engineer?
+##### Who makes a good DevOps Engineer?
 I've found that people who are passionate about DevOps have some common personality features:
 - Industriously Lazy
 - Able to see the beauty in efficiency
@@ -50,7 +50,7 @@ This list isn't exhaustive or exclusive.
 ---
 
 ### Intro to Infrastructure as Code (IaC)
-###### What is IaC?
+##### What is IaC?
 Infrastructure as Code is a methodology that in its purest form would allow you to make any change necessary to the infrastructure via a change to source code. Thereby giving you access to all of the features of a source-controlled codebase. Such as; Versioned history and change control.
 
 The idea that you could also leverage IaC to recover from any infrastructure failure or even spin up an exact replica of your infrastructure in a different geographical region or cloud provider is very lucrative to companies.
@@ -59,11 +59,11 @@ The idea that you could also leverage IaC to recover from any infrastructure fai
 
 ### Workstation Setup
 
-###### Installing a Command Line Interface (CLI)
+##### Installing a Command Line Interface (CLI)
 - Recommendation for Mac: [iTerm2](https://www.iterm2.com)
 - Recommendation for Linux: [Terminal](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
 
-###### Creating a code folder
+##### Creating a code folder
 > Using your CLI
 
 1. Navigate to your `root` folder
@@ -71,7 +71,7 @@ The idea that you could also leverage IaC to recover from any infrastructure fai
 2. Create the `code` folder
   - `mkdir code`
 
-###### Navigating the Command Line
+##### Navigating the Command Line
 > Refer to Additional-Resources.1 for a more complete list.
 
 Quick callouts:
@@ -82,7 +82,7 @@ Quick callouts:
 - `ls` = List, view the contents of your current CLI context(IE subdirectories and files)
   - `ll` is also a popular option
 
-###### Installing an IDE
+##### Installing an IDE
 - Recommendation: [Atom](https://atom.io/)
 
 ---
