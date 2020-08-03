@@ -33,6 +33,11 @@ DevOps as a role is an evolution of a company adopting a DevOps Culture. At a ce
 
 In fewer words; DevOps Engineers exist to increase the output of Developers, and thus the velocity of feature releases, by using automation to remove toil.
 
+#### A day in the life
+DevOps' daily tasks is a box of chocolates. There are always larger projects intended to improve the overall DevOps maturity of the organization. These large projects are balanced and prioritized against incoming ad-hoc asks from the Developers, Security team, etc. An example of a large DevOps project is migrating Helm charts from Helm2 to Helm3. Or, building an automated pipeline to run programmatically run SQL scripts against a database. Typical ad-hoc requests include troubleshooting failed pipelines, triaging alerts, clarifying configuration of applications, etc.
+
+On a given day you can be sure that you'll put your hands on many YAML files tweaking settings for CI/CD pipelines or Infrastructure as Code. You can also plan to be verifying information and checking the results of your tests inside of the consoles for tools like Gitlab and AWS. Almost all of your changes will be made via code using your Editor (which we will get setup later) and synced with the rest of the team's work via Git.
+
 #### Why DevOps for Companies?
 Companies that have moved from adopting a DevOps culture to hiring dedicated DevOps Engineers is looking for a person or team of people to be force multipliers for their Developers.
 
@@ -83,7 +88,7 @@ Quick callouts:
   - `ll` is also a popular option
 
 #### Installing an IDE
-- Recommendation: [Atom](https://atom.io/)
+- Recommendations: [Atom](https://atom.io/) or [VSCode](https://code.visualstudio.com/)
 
 ---
 
