@@ -87,4 +87,45 @@ Lists can be easily identified by their brackets `[]`. Lists differ from dicts i
 ---
 
 #### Loops
-Loops are what we use to iterate through a list or dict and work with them en masse. We'll be covering the `for` loop.
+Loops are what we use to iterate through a list or dict and work with them en masse. We'll be covering the `for` loop. A `for` loop will let us run a set of code against each object inside of a list or dict.
+```
+for item in food:
+  print(item)
+```
+Returns:
+```
+apple
+banana
+pear
+potato
+```
+
+---
+
+#### Conditionals
+The most common conditional is an `if` statement. An `if` statement will compare two objects and run a subset of code if it the statement evaluates to `true` or a different subset of code if the statement evaluates to `false`.
+```
+if 1 == 1:
+  print("This code runs because the statement evaluates to true")
+else:
+  print("This code would run if the statement was false")
+```
+
+---
+
+#### Puting it all together
+The real magic of coding comes from combining simple functions to create a more complex set of functions that perform a specific task. For instance; Running an `if` statement against each object in a list to determine if that object is the one you're looking for.
+```
+for item in food:
+  if item == "banana":
+    print("Found the banana!")
+  else:
+    print("This isn't a banana...")
+```
+Returns:
+```
+This isn't a banana...
+Found the banana!
+This isn't a banana...
+This isn't a banana...
+```
