@@ -1,4 +1,4 @@
-### Week 1
+## Week 1
 #### Overview
 This week's focus is on building out our development environments and an introduction to some of the key concepts that drive DevOps.
 
