@@ -122,5 +122,53 @@ This isn't a banana...
 ---
 
 ### Weekly Homework:
-- Complete Code Club Crew's [Challenge 1](https://github.com/Code-Club-Crew/challenge1)
+- Using the code in `boilerplate.py` write a script that will:
+  - Return the name of each starship
+  - Return the starship_class of each starship
+  - Return the name of each of the starship's pilots if it has them
+  - Example Output:
+  ```CR90 corvette
+  Class:
+    corvette
+Star Destroyer
+  Class:
+    Star Destroyer
+Sentinel-class landing craft
+  Class:
+    landing craft
+Death Star
+  Class:
+    Deep Space Mobile Battlestation
+Millennium Falcon
+  Class:
+    Light freighter
+  Pilots:
+    Chewbacca
+    Han Solo
+    Lando Calrissian
+    Nien Nunb
+Y-wing
+  Class:
+    assault starfighter
+X-wing
+  Class:
+    Starfighter
+  Pilots:
+    Luke Skywalker
+    Biggs Darklighter
+    Wedge Antilles
+    Jek Tono Porkins
+TIE Advanced x1
+  Class:
+    Starfighter
+  Pilots:
+    Darth Vader
+Executor
+  Class:
+    Star dreadnought
+Rebel transport
+  Class:
+    Medium transport
+    ```
+
 - Commit it to your Gitlab Repo
