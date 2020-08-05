@@ -1,15 +1,4 @@
-- Python
-  - Challenge 1
-  - Documentation & Resources
-  - Loops
-  - Lists
-  - Dicts
-  - If/Else
-- Weekly Homework:
-  - Complete challenge 1 of Code Club Crew
-  - Commit it to their Github Repo
-
-### Week 2
+## Week 2
 #### Overview
 This week's focus is building a script in Python that will function as our application for the rest of the Bootcamp. DevOps Engineers regularly need to write small scripts to manage applications at scale or to shore up blind spots in their tooling. The most popular languages in the DevOps space for writing scripts are Python and Shell/Bash, and to a lesser extent Go.
 
@@ -113,7 +102,7 @@ else:
 
 ---
 
-#### Puting it all together
+#### Putting it all together
 The real magic of coding comes from combining simple functions to create a more complex set of functions that perform a specific task. For instance; Running an `if` statement against each object in a list to determine if that object is the one you're looking for.
 ```
 for item in food:
@@ -129,3 +118,9 @@ Found the banana!
 This isn't a banana...
 This isn't a banana...
 ```
+
+---
+
+### Weekly Homework:
+- Complete Code Club Crew's [Challenge 1](https://github.com/Code-Club-Crew/challenge1)
+- Commit it to your Gitlab Repo

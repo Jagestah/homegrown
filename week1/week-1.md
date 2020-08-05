@@ -115,6 +115,6 @@ Manipulating the code in Git isn't always intuitive and it can be frustrating of
 
 ## Weekly Homework:
 - Familiarize yourself with the Additional Resources listed above.
-- Create a Github account.
-- Create Repo for the ongoing project.
+- Create a Gitlab account.
+- Create a Gitlab repo for the ongoing project.
 - Create a README.md in the repo documenting why you're interested in this course.
