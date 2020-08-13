@@ -1,4 +1,4 @@
-#! python3
+#! /bin/python3
 
 ###
 # To use this code run `pip3 install -r requirements.txt`
