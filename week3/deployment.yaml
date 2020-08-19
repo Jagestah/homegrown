@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swapi
+spec:
+  selector:
+    matchLabels:
+      app: swapi
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: swapi
+    spec:
+      containers:
+      - name: swapi-container
+        image: 
