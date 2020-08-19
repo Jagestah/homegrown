@@ -63,6 +63,8 @@ Services | Essentially provides a DNS entry and a Load Balancer for a subset of 
 Secrets | This is where you should store the configuration for your application, according to the [12 Factor App](12factor.net). Secrets are added to a Pod's environment via configuration in the Pod template located inside of a Deployment. Secrets are encoded using Base64 (Different from encrypting).
 Namespaces | Logical separations of objects within a k8s cluster. If you're not able to find your resource, make sure you're looking in the correct namespace.
 
+---
+
 #### kubectl
 Kube Cuddle.
 This is our main tool for manipulating our k8s cluster. We can use it to install new deployments, troubleshoot pods, or cull the cattle. You'll find yourself typing `kubectl` many times a day; Do yourself a favor and give it an easier to type alias (`k`).
@@ -71,8 +73,9 @@ This is our main tool for manipulating our k8s cluster. We can use it to install
 
 Command | Description
 --- | ---
-`kubectl get <object>` | Get basic information about an object such as its status and age. Add `-o yaml` for more details.
+`kubectl get <object>` | Get basic information about an object such as its status and age. Add `-o yaml` or `-o wide` for more details.
 `kubectl describe <object>` | Get detailed information about an object. Mostly used to troubleshoot issues.
 `kubectl logs <pod-name>` | Get the logs out of a specific pod. Add `-f` to follow the logs.
 `kubectl apply -f <manifest file>` | Apply the manifest file to add a resource to your k8s cluster.
 `kubectl edit <object>` | Open the in-cluster manifest that holds the configuration of your object in your default editor. Save and close the editor when you're finished. Update your environment variable `EDITOR` to point to your editor of choice. IE `export EDITOR='atom -nw'`
+`kubectl delete <object>` | Remove a resource from your cluster. When used against a pod it will immediately be replaced thanks to the ReplicaSet/Deployment.
