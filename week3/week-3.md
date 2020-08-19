@@ -79,3 +79,6 @@ Command | Description
 `kubectl apply -f <manifest file>` | Apply the manifest file to add a resource to your k8s cluster.
 `kubectl edit <object>` | Open the in-cluster manifest that holds the configuration of your object in your default editor. Save and close the editor when you're finished. Update your environment variable `EDITOR` to point to your editor of choice. IE `export EDITOR='atom -nw'`
 `kubectl delete <object>` | Remove a resource from your cluster. When used against a pod it will immediately be replaced thanks to the ReplicaSet/Deployment.
+
+> I also recommend installing `watch`
+`brew install watch`
