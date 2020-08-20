@@ -20,7 +20,8 @@ In the Slack channel we have several industry professionals and other students w
 ### Goals of this bootcamp
 The goal of this bootcamp is to expose students to the problems we see in modern software development and give them the knowledge and mentorship necessary to solve those problems in a DevOps way. DevOps Engineering is a very rewarding career for those who enjoy it; But with a scarcity of mentors and the lack of a formal career track leading to a DevOps position many aren't afforded an opportunity to determine if DevOps is for them. Let's change that.
 
-I want to build a culture of asking questions and providing mentorship amongst those trying to break inely welcoming. Those that have blazed a path to success in DevOps are excited and eager to teach others their hard-earned lessons. My aim is to provide a conduit for that student/mentorship relationship while simultaneously teaching people to embrace automation and build a healthy hate for toil.
+I want to build a culture of asking questions and providing mentorship amongst those trying to break in to the DevOps space or for those that want to know if DevOps is for them but don't know where to start.
+I have found the DevOps community to be extremely welcoming. Those that have blazed a path to success in DevOps are excited and eager to teach others their hard-earned lessons. My aim is to provide a conduit for that student/mentorship relationship while simultaneously teaching people to embrace automation and build a healthy hate for toil.
 
 ---
 
