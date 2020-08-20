@@ -13,5 +13,5 @@ spec:
         app: swapi
     spec:
       containers:
-      - name: swapi-container
-        image: 
+      - name: any-name-we-want
+        image: jagestah/homegrown:latest

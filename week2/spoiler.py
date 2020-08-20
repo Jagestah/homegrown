@@ -7,7 +7,9 @@
 import requests
 # https://requests.readthedocs.io/en/master/
 import pprint
+import time
 # https://docs.python.org/3/library/pprint.html
+
 
 # PrettyPrint changes ugly single-line json in to a human readable format
 pp = pprint.PrettyPrinter(indent=2)
@@ -30,15 +32,17 @@ print(len(starships))
 
 # pp.pprint(starships[0])
 
-for starship in starships:
-    print("Name: "+starship["name"])
-    print("   Class: "+starship["starship_class"])
-    # print(type(starship["pilots"]))
-    if len(starship["pilots"]) > 0:
-        print("   Pilots: ")
-    for pilot in starship["pilots"]:
-        # print("Pilot URL: "+pilot)
-        pilot_data = requests.get(pilot)
-        pilot_data_json = pilot_data.json()
-        print("    "+pilot_data_json["name"])
-    # print("Pilots: "+starship["pilots"])
+while True:
+    for starship in starships:
+        print("Name: "+starship["name"])
+        print("   Class: "+starship["starship_class"])
+        # print(type(starship["pilots"]))
+        if len(starship["pilots"]) > 0:
+            print("   Pilots: ")
+        for pilot in starship["pilots"]:
+            # print("Pilot URL: "+pilot)
+            pilot_data = requests.get(pilot)
+            pilot_data_json = pilot_data.json()
+            print("    "+pilot_data_json["name"])
+        # print("Pilots: "+starship["pilots"])
+    time.sleep(10)
