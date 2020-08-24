@@ -9,6 +9,7 @@ We're going to focus on Python because the readability of Shell scripts quickly 
 #### Additional Reading:
 > Take the time to familiarize yourself with the documentation. A great deal of early-stage programming involves reading documentation and learning the syntax of commands. Remember to ask questions in the C3 Slack. Much of the documentation is written by programmers and for programmers; Making it obtuse to read without practice.
 
+- Add Data types
 - [Python Variables](https://www.learnpython.org/en/Variables_and_Types)
 - [Python Dictionaries](https://realpython.com/python-dicts/)
 - [Python Lists](https://www.openbookproject.net/books/bpp4awd/ch03.html)
