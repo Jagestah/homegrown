@@ -35,6 +35,8 @@ Command | Description
 `helm uninstall` | Remove a Helm Chart from K8s
 `helm template` | Verify the output of your Helm Charts
 
+---
+
 #### Commons Command Flags
 
 Flag | Description
@@ -43,6 +45,8 @@ Flag | Description
 `--create-namespace` | Creates the namespace specified in the `upgrade` or `install` command if it doesn't already exist. Default behavior in Helm 2 but must be explicit in Helm
 `--debug` | Print the output of the templates.
 `--dry-run` | Prevents the command from actually applying the manifests to the cluster. Usually used in conjunction with `--debug`
+
+---
 
 #### Context in the Templates
 
