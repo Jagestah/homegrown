@@ -82,3 +82,7 @@ Command | Description
 
 > I also recommend installing `watch`
 `brew install watch`
+
+---
+
+### Weekly Homework:

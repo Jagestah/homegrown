@@ -1,0 +1,50 @@
+namespace: swapi-week4
+container:
+  name: container-name
+replicas: '1'
+image: jagestah/swapi:week4
+command:
+  - "python3"
+  - "./week4/swapi.py"
+
+deployments:
+  ship-1:
+    enabled: true
+    args:
+      - "1"
+  ship-2:
+    enabled: false
+    args:
+      - "2"
+  ship-3:
+    enabled: false
+    args:
+      - "3"
+  ship-4:
+    enabled: false
+    args:
+      - "4"
+  ship-5:
+    enabled: false
+    args:
+      - "5"
+  ship-6:
+    enabled: false
+    args:
+      - "6"
+  ship-7:
+    enabled: false
+    args:
+      - "7"
+  ship-8:
+    enabled: false
+    args:
+      - "8"
+  ship-9:
+    enabled: false
+    args:
+      - "9"
+  ship-10:
+    enabled: false
+    args:
+      - "10"

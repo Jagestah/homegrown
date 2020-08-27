@@ -55,3 +55,17 @@ Helm maintains a notion of _context_. Meaning functions in our templates may beh
 Typically looping functions such as `range` or `with` will change our context. Context is represent in the templates by the leading `.` we see in our object references.
 
 If we want to use an absolute reference from within a different context we can refer to an object by preceding it with a `$`. IE `$.Values.image`. This is great for referencing global values that we don't want to change based on context.
+
+---
+
+### Weekly Homework:
+- Create a helm chart that is able to deploy Week 3's Docker container and set its replicas via the `values.yaml`
+- Using one Docker Image and one `deployment.yaml` Helm Template, create a Helm Chart that deploys multiple deployments that do slightly different things.
+
+---
+
+#### SPEAKER NOTES
+- Explain Helm2 vs Helm 3
+- `helm repo add stable https://kubernetes-charts.storage.googleapis.com/`
+- Be better at creating the differing commands
+- Better swapi.py script that doesn't _not_ return things
