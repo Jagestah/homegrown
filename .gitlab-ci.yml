@@ -1,4 +1,5 @@
-image: python:latest
+defaults:
+  image: python:latest
 
 stages:
   - build
