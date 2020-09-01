@@ -1,0 +1,62 @@
+image:image: python:latest
+
+stages:
+  - build
+  - test
+  - review
+  - deploy
+
+variables:
+  VARIABLE1: "foo"
+  VARIABLE2: "bar"
+  kubeconfig: |
+    ---
+    apiVersion: v1
+    clusters:
+    - cluster:
+        certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJXRENCL3FBREFnRUNBZ0VBTUFvR0NDcUdTTTQ5QkFNQ01DTXhJVEFmQmdOVkJBTU1HR3N6Y3kxelpYSjIKWlhJdFkyRkFNVFU1T1RBd01UazNNekFlRncweU1EQTVNREV5TXpFeU5UTmFGdzB6TURBNE16QXlNekV5TlROYQpNQ014SVRBZkJnTlZCQU1NR0dzemN5MXpaWEoyWlhJdFkyRkFNVFU1T1RBd01UazNNekJaTUJNR0J5cUdTTTQ5CkFnRUdDQ3FHU000OUF3RUhBMElBQk0zTWE0azcvQ3hBcVU4Z2wvbTJFN1NrejdFa05GM2FnWittSTI4WXh6WHoKVkJOSmtmVVE3ZzJFVVAvWFFsTHJtRXcrK0FBekNDc2szU3Nrak1jem11YWpJekFoTUE0R0ExVWREd0VCL3dRRQpBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUFvR0NDcUdTTTQ5QkFNQ0Ewa0FNRVlDSVFEZDQ4Z1JVK2hXCnAwWHl5bzBaVmJJcC9LSkVNOWMxMktNOEp0WCtMbEJWN3dJaEFKRVVGUVNZR3BHWEJWaWYzYmhBWWVWQWZkaGgKdkpYTnh1SmhYV05BVDlWcgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+        server: https://0.0.0.0:49890
+      name: k3d-mycluster
+    contexts:
+    - context:
+        cluster: k3d-mycluster
+        user: admin@k3d-mycluster
+      name: k3d-mycluster
+    current-context: k3d-mycluster
+    kind: Config
+    preferences: {}
+    users:
+    - name: admin@k3d-mycluster
+      user:
+        password: 417f284875d796a04ed6480197c78d75
+        username: admin
+
+build-the-thing:
+  stage: build
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+  tags:
+    - build
+  before_script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+  script:
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID .
+    - docker push $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID
+
+deploy-the-thing:
+  image: dtzar/helm-kubectl
+  stage: deploy
+  tags:
+    - jj
+  script:
+    - echo $kubeconfig | ~/.kube/config
+    - helm upgrade --install swapi --namespace swapi --create-namespace ./week4
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "master"'
+      when: always
+    - when: never
+  environment:
+    name: jj

@@ -69,3 +69,4 @@ If we want to use an absolute reference from within a different context we can r
 - `helm repo add stable https://kubernetes-charts.storage.googleapis.com/`
 - Be better at creating the differing commands
 - Better swapi.py script that doesn't _not_ return things
+- More better homework
