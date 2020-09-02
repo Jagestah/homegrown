@@ -21,6 +21,17 @@ Uncomment and change `gitlabUrl` to `https://gitlab.com/` - Line 19
 Uncomment and add `KetaL5SnyWuqwzyoHz3X` to the `runnerRegistrationToken` - Line 25
 Uncomment and add your arbitrary, runner-specific tags - Line 146
 Check for your runner here: https://gitlab.com/groups/devops-homegrown/-/settings/ci_cd
+update `rbac.create` to `true` -- Line 85
+update `rbac.clusterWideAccess` to `true` -- Line 92
+
+Share runner-specific tags and the output of `k3d kubeconfig get mycluster` with the group
+
+
+Default image
+Default env vars
+deploy to environment
+Job using specific runner
+Publish image to project registry
 
 ---
 

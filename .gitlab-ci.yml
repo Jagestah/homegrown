@@ -9,6 +9,7 @@ stages:
 variables:
   VARIABLE1: "foo"
   VARIABLE2: "bar"
+  DOCKER_HOST: tcp://localhost:2375
   kubeconfig: |
     ---
     apiVersion: v1
