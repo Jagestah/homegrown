@@ -53,6 +53,7 @@ deploy-the-thing:
   tags:
     - jj
   script:
+    - mkdir ~/.kube
     - echo $kubeconfig | ~/.kube/config
     - helm upgrade --install swapi --namespace swapi --create-namespace ./week4
   rules:

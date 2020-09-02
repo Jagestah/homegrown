@@ -23,6 +23,7 @@ Uncomment and add your arbitrary, runner-specific tags - Line 146
 Check for your runner here: https://gitlab.com/groups/devops-homegrown/-/settings/ci_cd
 update `rbac.create` to `true` -- Line 85
 update `rbac.clusterWideAccess` to `true` -- Line 92
+update `runners.privileged` to `true` -- Line 168
 
 Share runner-specific tags and the output of `k3d kubeconfig get mycluster` with the group
 
