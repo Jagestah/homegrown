@@ -2,40 +2,6 @@
 #### Overview
 This week's focus is CI/CD and Gitlab by association. Gitlab is currently the industry leader in CI/CD and support free use of their platform; So it's the tool we're going to be using for this session.
 
-Get added to the Homegrown group
-Migrate in some form/fashion your homegrown project
-Helm install gitlab runner with tags and runner token
-let the group know about the runner tag
-
-brew install k3d
-k3d create cluster mycluster
-k3d kubeconfig merge mycluster --switch-context
-Get added to the devops-homegrown group
-Create new project in the devops-homegrown group
-git clone the project to the code folder
-cd to the project folder
-Create a `helm` folder
-cd to the helm folder
-helm repo add gitlab https://charts.gitlab.io
-helm repo update
-helm fetch gitlab/gitlab-runner --untar
-Uncomment and change `gitlabUrl` to `https://gitlab.com/` - Line 19
-Uncomment and add `KetaL5SnyWuqwzyoHz3X` to the `runnerRegistrationToken` - Line 25
-update `rbac.create` to `true` -- Line 85
-update `rbac.clusterWideAccess` to `true` -- Line 92
-Uncomment and add your arbitrary, runner-specific tags - Line 146
-update `runners.privileged` to `true` -- Line 168
-helm upgrade --install gitlab-runner ./gitlab-runner --namespace gitlab --create-namespace
-Share runner-specific tags and the output of `k3d kubeconfig get mycluster` with the group
-Check for your runner here: https://gitlab.com/groups/devops-homegrown/-/settings/ci_cd
-
-
-Default image
-Default env vars
-deploy to environment
-Job using specific runner
-Publish image to project registry
-
 ---
 
 #### Additional Reading:
@@ -95,10 +61,10 @@ Some common patterns for DRY pipelines I see are:
 - Using `extends` to re-use code within the `.gitlab-ci.yml`
 - Using `includes` to reference a separate template repo for deploy jobs
 
-
 ---
 
 ### Weekly Homework:
+
 Homework Steps:
 1. `brew install k3d`
 1. `k3d create cluster mycluster`
